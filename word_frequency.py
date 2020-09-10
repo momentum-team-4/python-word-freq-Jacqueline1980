@@ -25,9 +25,16 @@ def print_word_freq(file):
         if word not in i.keys():
             i[word] = 1
         else:
-            i[word] += 1
-    
-    print(i)
+            i[word] += 1    
+    #print(i)
+
+    i_dict_sorted = sorted(i, key=i.get, reverse=True)
+    for num in i_dict_sorted:
+        print(num, i[num])
+
+
+
+
 
 
 
